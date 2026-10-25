@@ -385,7 +385,13 @@ footer {
 }
 
 @media (max-width: 800px) {
-    nav { display: none; }
+    nav { nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+} }
     .hero { flex-direction: column; padding: 60px 7%; }
     .hero h1 { font-size: 40px; }
     .report-card { width: 100%; }
