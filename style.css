@@ -385,27 +385,41 @@ footer {
 }
 
 @media (max-width: 800px) {
-    nav { nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    width: 100%;
-} }
-    .hero { flex-direction: column; padding: 60px 7%; }
-    .hero h1 { font-size: 40px; }
-    .report-card { width: 100%; }
-    .features { grid-template-columns: 1fr 1fr; }
-}
+    header {
+        height: auto;
+        min-height: 75px;
+        flex-wrap: wrap;
+        padding: 16px 5%;
+        gap: 15px;
+    }
 
-@media (max-width: 600px) {
-    .report-form { padding: 25px; }
-    .location-row { flex-direction: column; }
-    .location-btn { padding: 12px; }
-}
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+        width: 100%;
+        order: 3;
+    }
 
-@media (max-width: 500px) {
-    .features { grid-template-columns: 1fr; }
-    .hero-buttons { flex-direction: column; }
-    .primary-btn, .secondary-btn { text-align: center; }
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .report-card {
+        width: 100%;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
 }
