@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue | CivicFix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">CivicFix</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="report.html">Report Issue</a>
+        <a href="complaints.html">My Complaints</a>
+        <a href="index.html#about">About</a>
+    </nav>
+    <button class="login-btn">Login</button>
+</header>
+
+<main class="report-page">
+    <div class="report-header">
+        <p class="tagline">CIVIC ISSUE REPORTING</p>
+        <h1>Report an Issue</h1>
+        <p>
+            Help improve your community by reporting a public issue.
+            Provide the details below so it can be sent to the appropriate department.
+        </p>
+    </div>
+
+    <form class="report-form" id="complaintForm">
+        <label for="category">Issue Category</label>
+        <select id="category" required>
+            <option value="">Select an issue</option>
+            <option>Pothole / Road Damage</option>
+            <option>Garbage Accumulation</option>
+            <option>Broken Streetlight</option>
+            <option>Water Leakage</option>
+            <option>Damaged Traffic Signal</option>
+            <option>Fallen Tree</option>
+            <option>Other</option>
+        </select>
+
+        <label for="description">Issue Description</label>
+        <textarea id="description" rows="5" placeholder="Describe the problem clearly..." required></textarea>
+
+        <label for="photo">Upload Photo</label>
+        <input type="file" id="photo" accept="image/*">
+
+        <label for="location">Location</label>
+        <div class="location-row">
+            <input type="text" id="location" placeholder="Enter the location of the issue" required>
+            <button type="button" class="location-btn">📍 Use My Location</button>
+        </div>
+
+        <label for="priority">Priority</label>
+        <select id="priority">
+            <option value="Normal">Normal</option>
+            <option value="High">High</option>
+            <option value="Emergency">Emergency</option>
+        </select>
+
+        <button type="submit" class="submit-btn">Submit Complaint</button>
+    </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
